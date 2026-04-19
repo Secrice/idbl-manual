@@ -19,11 +19,11 @@
       --c-brand-xdark:  #065F46;
       --c-brand-light:  #D1FAE5;
       --c-brand-mid:    #6EE7B7;
-      --c-nav-bg:       #064E3B;
-      --c-nav-text:     #A7F3D0;
-      --c-nav-active:   #FFFFFF;
-      --c-nav-hover:    rgba(255,255,255,0.08);
-      --c-nav-border:   rgba(255,255,255,0.1);
+      --c-nav-bg:       #e8f8f5;
+      --c-nav-text:     #1a4731;
+      --c-nav-active:   #064E3B;
+      --c-nav-hover:    rgba(16,185,129,0.1);
+      --c-nav-border:   rgba(0,0,0,0.1);
       --c-bg:           #F8FAFC;
       --c-surface:      #FFFFFF;
       --c-border:       #E2E8F0;
@@ -104,11 +104,12 @@
       flex-shrink: 0;
       z-index: 100;
       transition: transform var(--t-mid);
+      border-right: 1px solid #d8d8e5;
     }
 
     #sidebar::-webkit-scrollbar { width: 4px; }
     #sidebar::-webkit-scrollbar-track { background: transparent; }
-    #sidebar::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.15); border-radius: 2px; }
+    #sidebar::-webkit-scrollbar-thumb { background: rgba(16,185,129,0.3); border-radius: 2px; }
 
     .nav-logo {
       padding: 20px 20px 16px;
@@ -947,10 +948,10 @@
     ============================================================ */
     .contact-bar {
       max-width: var(--content-max);
-      background: linear-gradient(135deg, var(--c-nav-bg), var(--c-brand-xdark));
+      background: linear-gradient(135deg, #064E3B, var(--c-brand-xdark));
       border-radius: var(--radius-lg);
       padding: 32px;
-      color: var(--c-nav-text);
+      color: #A7F3D0;
       display: flex;
       align-items: center;
       justify-content: space-between;
